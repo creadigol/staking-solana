@@ -1,0 +1,15 @@
+[features]
+seeds = false
+[programs.devnet]
+reward_distributor = "4viLzLyPYyo1iL3Y9jVgioAytQxNS15Hz3ReNv9ZoxmF"
+stak_pool = "9DP16tQerNdCrb4E1AiwaK8kRviWDu2NaKtt1vR86sdc"
+
+[registry]
+url = "https://anchor.projectserum.com"
+
+[provider]
+cluster = "devnet"
+wallet = "/home/jerry/.config/solana/id.json"
+
+[scripts]
+test = "yarn run ts-mocha -p ./tsconfig.json -t 1000000 tests/**/create-entry-close-pool.spec.ts"

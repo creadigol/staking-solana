@@ -1,0 +1,31 @@
+# Ignore Mac OS noise
+.DS_Store
+
+# VSCode history
+.history
+
+
+# Ignore makefile output
+validator.PID
+tests/out.xml
+
+# Ignore the build directory for Rust/Anchor
+
+# Anchor verified builds directory
+docker-target
+
+# Ignore backup files creates by cargo fmt.
+**/*.rs.bk
+
+# Ignore logs
+.anchor
+yarn-error.log
+lerna-debug.log
+
+# Ignore node modules
+node_modules
+.eslintcache
+
+target/
+
+
