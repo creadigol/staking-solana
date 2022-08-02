@@ -1,56 +1,56 @@
 <h2>Create Pool function : initPool</h2>
-arg Define Variable : InitPoolIx
+<p>arg Define Variable : InitPoolIx</p>
 
 ============Argument Paramters===================
 
-overlayText => Stacking related Text Define Here (Optional)
-imageUri => Set pool image Url (Optional)
- requiresCollections  => set validation for specific collection nft stake (PublicKey) (Optional)
- requiresCreators =>  List of required creators pubkeys (Optional)
- requiresAuthorization =>  Boolean to require authorization (Optional)
+<p>overlayText => Stacking related Text Define Here (Optional)</p>
+<p> imageUri => Set pool image Url (Optional)</p>
+<p> requiresCollections  => set validation for specific collection nft stake (PublicKey) (Optional)</p>
+<p> requiresCreators =>  List of required creators pubkeys (Optional)</p>
+ <p>requiresAuthorization =>  Boolean to require authorization (Optional)</p>
  
- resetOnStake =>  Boolean to reset an entry's total stake seconds on unstake (Optional)
- cooldownSeconds => Number of seconds for token to cool down before returned to the staker (Optional)
- endDate => set for stake period limit in Number of seconds (Optional)
+<p> resetOnStake =>  Boolean to reset an entry's total stake seconds on unstake (Optional)</p>
+<p> cooldownSeconds => Number of seconds for token to cool down before returned to the staker (Optional)</p>
+<p> endDate => set for stake period limit in Number of seconds (Optional)</p>
  
  
  -------------------------------------------------------------
  
- Reward Set function : initRewardDistributor 
+ <h2>Reward Set function : initRewardDistributor </h2>
  
  ============Argument Paramters===================
- stakePoolId => gererated by : initPool, for set reward for specific pool
- rewardMintId => set PublicKey key for reward token
- rewardAmount => Set Reward Amount
- rewardDurationSeconds => Set reward Duration in seconds (Optional)
- rewardDistributorKind => Reward distributor kind Mint or Treasury (Optional)
- maxSupply =>  Max supply (Optional)
- supply -  Supply (Optional)
+<p> stakePoolId => gererated by : initPool, for set reward for specific pool</p>
+<p> rewardMintId => set PublicKey key for reward token</p>
+<p> rewardAmount => Set Reward Amount </p>
+<p> rewardDurationSeconds => Set reward Duration in seconds (Optional) </p>
+<p> rewardDistributorKind => Reward distributor kind Mint or Treasury (Optional) </p>
+ <p>maxSupply =>  Max supply (Optional) </p>
+ <p>supply -  Supply (Optional)</p>
  
- Create Stake Function : stake
+ <h2>Create Stake Function : stake</h2>
  
   ============Argument Paramters===================
- stakePoolId => gererated by : initPool, for set stake settings
-originalMintId => nft Mint id PublicKey
-userOriginalMintTokenAccountId => nft mint token account id PublicKey 
+ <p> stakePoolId => gererated by : initPool, for set stake settings </p>
+ <p>originalMintId => nft Mint id PublicKey</p>
+ <p>userOriginalMintTokenAccountId => nft mint token account id PublicKey </p>
 
-Create Unstake Function : unstake
+<h2>Create Unstake Function : unstake</h2>
  
   ============Argument Paramters===================
-stakePoolId => gererated by : initPool, for set stake settings
-originalMintId => nft Mint id PublicKey
+<p>stakePoolId => gererated by : initPool, for set stake settings </p>
+<p> originalMintId => nft Mint id PublicKey</p>
  
-Get claim Rewards : claimRewards
+<h2>Get claim Rewards : claimRewards </h2>
  
   ============Argument Paramters===================
-stakePoolId => gererated by : initPool, for set stake settings
-stakeEntryId => nft Mint id PublicKey
+<p>stakePoolId => gererated by : initPool, for set stake settings </p>
+<p>stakeEntryId => nft Mint id PublicKey </p>
   
-Get claim Fund : reclaimFunds
+<h2>Get claim Fund : reclaimFunds </h2>
  
   ============Argument Paramters===================
-stakePoolId => gererated by : initPool, for set stake settings
-amount => 
+<p>stakePoolId => gererated by : initPool, for set stake settings </p>
+<p>amount </p>
     
 
  
