@@ -1,0 +1,15 @@
+[features]
+seeds = false
+[programs.devnet]
+reward_distributor = "Cv5agDtxZXA7eSBe3TLWG8DBJikHPBArv3EsLQ2ojgta"
+stak_pool = "DMYJtxQueW7vH8Yxmz1Zinuc4kBDu4Cvs2zbptEmMEPW"
+
+[registry]
+url = "https://anchor.projectserum.com"
+
+[provider]
+cluster = "devnet"
+wallet = "/home/jerry/.config/solana/id.json"
+
+[scripts]
+test = "yarn run ts-mocha -p ./tsconfig.json -t 1000000 tests/**/stake-claim-rewards.spec.ts"
